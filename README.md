@@ -2,7 +2,7 @@
 # IP vs TCP,UDP
 ### IP
 - IP 패킷 정보
-> 20~60 bytes의 Header(Source IP, Destination IP 32bit씩 포함 등) + Data -> 총 20~65535 bytes
+> 20 ~ 60 bytes의 Header(Source IP, Destination IP 32bit씩 포함 등) + Data -> 총 20~65535 bytes
 - 비연결성 : 패킷을 보낼 때 받는 쪽이 받을 수 있는 상태인지 알 수 없음<br/>
 - 비신뢰성 
 > 패킷이 소실되어도 알 수 없음 -> 서버에 문제가 생겨 패킷이 전송되는 중 소실되는 현상<br/>
