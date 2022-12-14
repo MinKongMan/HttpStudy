@@ -47,17 +47,23 @@
 > > ex) http, https, ftp 등등<br/>
 > > http는 80퐅, https는 443포트를 주로 사용(포트는 생략 가능)<br/>
 > > https = http+보안 추가(Http Secure)<br/>
+
 > userinfo
 > > URL에 사용자 정보를 포함해서 인증할 때 사용 (거의 사용하지 않음)
+
 > host
 > > 도메인명 또는 IP 주소를 직접 사용 가능
+
 > port
 > > 접속 포트, 일반적으로 생략, 생략 시 http는 80, https는 443
+
 > path
 > > 리소스가 있는 경로, 계층적 구조 <br/>
+
 > query
 > > key, value의 형태<br/>
 > > ?로 시작, &로 추가 가능
+
 > fragment
 > > html 내부 북마크 등에 사용
 - https://www.google.com:443/search?q=hello&hl=ko
