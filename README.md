@@ -31,3 +31,37 @@
 > PORT를 통해 하나의 IP에서 사용하는 여러 Application이 받는 패킷을 구분하도록 해줌
 > 같은 IP 내에서 프로세스 구분
 - TCP는 이미 정해진 규칙이 있기 때문에 개발자가 UDP를 사용하며 어플리케이션 단에서 수정하면 됨
+
+
+# URI, URL, URN
+### URI
+- Uniform : 리소스를 식별하는 통일된 방식
+- Resource : 자원, URI로 식별할 수 있는 모든 것(제한 없음)
+- Identifier : 다른 항목과 구분하는데 필요한 정보
+
+### URL
+- Locator : 리소스가 있는 위치 지정
+- scheme : //[userinfo@]host[:port][/path][?query][#fragment]
+> scheme
+> > 주로 프로토콜이 사용됨(어떤 방식으로 작동될 것인가에 대한 Client와 Server간의 규칙)<br/>
+> > ex) http, https, ftp 등등<br/>
+> > http는 80퐅, https는 443포트를 주로 사용(포트는 생략 가능)<br/>
+> > https = http+보안 추가(Http Secure)<br/>
+> userinfo
+> > URL에 사용자 정보를 포함해서 인증할 때 사용 (거의 사용하지 않음)
+> host
+> > 도메인명 또는 IP 주소를 직접 사용 가능
+> port
+> > 접속 포트, 일반적으로 생략, 생략 시 http는 80, https는 443
+> path
+> > 리소스가 있는 경로, 계층적 구조 <br/>
+> query
+> > key, value의 형태<br/>
+> > ?로 시작, &로 추가 가능
+> fragment
+> > html 내부 북마크 등에 사용
+- https://www.google.com:443/search?q=hello&hl=ko
+
+
+### URN
+- Name : 리소스에 이름을 부여
