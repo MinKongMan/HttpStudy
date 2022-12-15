@@ -66,7 +66,18 @@
 
 > fragment
 > > html 내부 북마크 등에 사용
-- https://www.google.com:443/search?q=hello&hl=ko
+
+##### https://www.google.com:443/search?q=hello&hl=ko 검색 시
+1. DNS 조회 (www.google.com:443)
+2. HTTP 요청 메시지 생성
+> GET /search?q=hello&hl=ko HTTP/1.1 HOST:www.google.com 이런 모양
+> HTTP메소드/ path정보/ HTTP 버전 정보/ HOST 정보
+3. 메시지 생성 후 SOCKET 라이브러리를 통해 TCP/IP로 전달
+4. TCP/IP에서 받은 메시지에 패킷 생성
+5. 인터넷 망으로 전달
+6. 망을 통해 구글 서버로 전달 후 구글 서버는 HTTP 요청 메시지 해독 후 HTTP 응답 메시지 생성
+7. 구글 서버 또한 TCP/IP 패킷 생성 후 응답 메시지를 담고 인터넷 망으로 전달
+8. Client는 패킷에 들어있는 응답메시지를 해독 후 화면으로 전달
 
 
 ### URN
