@@ -61,3 +61,30 @@ Http2, 3에서 최적화를 통해 해결을 한 상태
 > GET, POST, PATCH 캐시 가능하지만 실제로 GET정도만 사용<br/>
 > POST, PATCH는 본문 내용까지 캐시 키로 고려해야 한다. (키시를 하려면 같은 리소스와 키가 맞아야 함)
 > GET은 URL만 키로 잡고 캐시(심플)
+
+### Http 메시지
+- Http 메시지 구조
+> start-line <br/>
+> header     <br/>
+> empty-line <br/>
+> message body <br/>
+
+- 요청 메시지
+> ex) GET /search?q=hello&hl=ko HTTP/1.1<br/>
+> ex) Host:www.google.com<br/>
+> (공백)<br/>
+> (body 있을 수도, 없을 수도)
+
+- 응답 메시지
+> ex) HTTP/1.1 200OK<br/>
+> ex) Content-Type : text/html;charset=UTF-8 Content-Length:3423<br/>
+> ex) (공백) <br/>
+> ex) ```
+<html> 
+  <body? ... </body> 
+</html>
+```
+
+
+
+
