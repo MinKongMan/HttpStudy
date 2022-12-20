@@ -79,7 +79,8 @@ Http2, 3에서 최적화를 통해 해결을 한 상태
 > ex) HTTP/1.1 200OK<br/>
 > ex) Content-Type : text/html;charset=UTF-8 Content-Length:3423<br/>
 > ex) (공백) <br/>
-> ex) ```
+```
+body 부분
 <html> 
   <body? ... </body> 
 </html>
