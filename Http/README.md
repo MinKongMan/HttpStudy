@@ -97,6 +97,14 @@ body 부분
 - HTTP body
 > 실제 전송할 데이터
 > HTML 문서, 이미지, 영상, JSON 등 Byte로 표현할 수 있는 모든 데이터 전송 가능 <br/>
+
+1) 메시지 본문(message body)를 통해 표현 데이터 전달
+2) 메시지 본문 = 페이로드(pay load)
+3) 표현은 요청이나 응답에서 전달할 실제 데이터
+4) 표현 헤더는 표현 데이터를 해석할 수 있는 정보 제공 
+ex) 데이터 유형(html,json), Content-Type, Content-Length
+
+
 - HTTP 상태 코드
 > 1xx : 요청이 수신되어 처리 중<br/>
 > 2xx : 요청 정상 처리<br/>
