@@ -52,8 +52,8 @@
 요즘 웹 브라우저는 임의로 캐시를 해버리는 경우도 있기 때문에 캐시가 필요하지 않은 경우 사용<br/>
 ex) 통장 잔고 금액(자주 변함)<br/>
 
-1. Cache-Control : no-cache, no-store, must-revalidate
-1-1 no-cache : 데이터는 캐시해도 되지만, 항상 원서버에 검증하고 사용
-1-2 no-store : 데이터에 민감한 정보가 있으므로 저장하면 안됨 (메모리에서 사용하고 최대한 빨리 삭제)
-1-3 must-revalidate : 캐시 만료 후 최초 조회 시 원서버에 검증해야함, 원서버 접근 실패시 반드시 504오류가 발생해야함
-2. Pragma : no-cache(Http 1.0 하위 호환)
+1. Cache-Control : no-cache, no-store, must-revalidate<br/>
+1-1 no-cache : 데이터는 캐시해도 되지만, 항상 원서버에 검증하고 사용<br/>
+1-2 no-store : 데이터에 민감한 정보가 있으므로 저장하면 안됨 (메모리에서 사용하고 최대한 빨리 삭제)<br/>
+1-3 must-revalidate : 캐시 만료 후 최초 조회 시 원서버에 검증해야함, 원서버 접근 실패시 반드시 504오류가 발생해야함<br/>
+2. Pragma : no-cache(Http 1.0 하위 호환)<br/>
